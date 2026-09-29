@@ -13,7 +13,7 @@
 <p class="muted">Ultimo aggiornamento: 29 settembre 2026</p>
 
 <h2>In breve</h2>
-<p>Trama è un diario personale. I tuoi momenti, le tue trame, le foto e i tuoi voti restano sul tuo telefono. Non abbiamo un server con i tuoi contenuti e non possiamo leggerli.</p>
+<p>Trama è un diario personale. I tuoi momenti, le tue trame, le foto e i tuoi voti restano sul tuo telefono. Non abbiamo un server con i tuoi contenuti e non possiamo leggerli. Una sola funzione facoltativa, il riassunto con Gemini, li invia a Google, e solo se la attivi tu.</p>
 
 <h2>Chi è il titolare</h2>
 <p>Mirko Raimo, contatto: <a href="mailto:mirko.raimo.dev@gmail.com">mirko.raimo.dev@gmail.com</a>.</p>
@@ -34,6 +34,12 @@
 <h2>Calendario</h2>
 <p>Se colleghi il Calendario di Apple o Google, Trama legge gli eventi del giorno per mostrarteli nel recap serale. Per Google usiamo solo il permesso di sola lettura (<code>calendar.readonly</code>). Gli eventi vengono letti direttamente dal tuo telefono verso Google, non passano da nostri server. Di ogni evento a cui dai un voto o una nota salviamo sul telefono titolo, orario, voto e nota. Non modifichiamo mai il tuo calendario. Puoi scollegarlo in ogni momento dalle Impostazioni.</p>
 <p>L'uso dei dati ottenuti dalle API di Google rispetta la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusi i requisiti di Uso Limitato. I dati del calendario non sono usati per pubblicità né venduti.</p>
+
+<h2>Riassunto con Gemini (facoltativo)</h2>
+<p>Nella schermata serale il pulsante «Riassumi» ti aiuta a scrivere la trama della giornata. È l'unica funzione in cui i tuoi contenuti lasciano il telefono, e succede solo se lo accetti (una volta, con una conferma) e solo quando premi il pulsante, mai in automatico.</p>
+<p>In quel momento inviamo a Google, tramite Gemini e Firebase AI Logic: il testo dei tuoi momenti di quel giorno, le note e i voti che hai dato agli eventi, il voto della giornata e i titoli e gli orari degli eventi del calendario di quel giorno. Non inviamo mai le foto, né identificativi, tag o altri dati. La richiesta parte dal tuo telefono verso i server di Google: non passa da server nostri e noi non ne conserviamo una copia.</p>
+<p>Usiamo il servizio a pagamento di Google. Secondo i <a href="https://ai.google.dev/gemini-api/terms">termini della Gemini API</a> (sezione «Paid Services»), i contenuti inviati non vengono usati per migliorare i prodotti di Google né per addestrare i suoi modelli; Google può comunque trattarli per il tempo e nei modi che quei termini prevedono. Per verificare che le richieste arrivino dall'app vera usiamo Firebase App Check (Apple App Attest su iPhone, Google Play Integrity su Android).</p>
+<p>Il riassunto compare nel campo della trama, resta modificabile ed è segnalato come «generato con AI»: può contenere imprecisioni. Puoi revocare il consenso in ogni momento da Impostazioni → Privacy. Il riassunto è riservato a chi ha almeno 18 anni, come richiedono i termini di Google, e c'è un limite di dieci riassunti al giorno.</p>
 
 <h2>Copia e esportazione dei tuoi dati</h2>
 <p>Da Impostazioni → I tuoi dati puoi salvare una copia di tutto il tuo diario (momenti, foto, trame, timbri, tag e voti), ripristinarla su questo o su un altro telefono, o esportare il diario come testo. Il file viene creato sul tuo telefono e lo conservi tu dove preferisci (File, iCloud Drive, Google Drive, un messaggio a te stesso...). Non passa da nessun nostro server e noi non ne riceviamo una copia. Il file non è protetto da password: conservalo dove ti fidi.</p>
@@ -57,7 +63,7 @@
 <p>Poiché i contenuti sono sul tuo telefono, li controlli tu. Per i dati che possiamo avere (le statistiche, le segnalazioni di errore, le email che ci scrivi), puoi chiederci accesso, rettifica o cancellazione scrivendo a <a href="mailto:mirko.raimo.dev@gmail.com">mirko.raimo.dev@gmail.com</a>. Hai anche il diritto di rivolgerti al Garante per la protezione dei dati personali.</p>
 
 <h2>Minori</h2>
-<p>Trama non è pensata per chi ha meno di 14 anni.</p>
+<p>Trama non è pensata per chi ha meno di 14 anni. Il riassunto con Gemini è riservato ai maggiorenni.</p>
 
 <h2>Modifiche</h2>
 <p>Se cambia qualcosa di importante, aggiorniamo questa pagina e la data in alto.</p>
